@@ -11,3 +11,4 @@ psycopg2
 reportlab
 opencv-python
 numpy
+mysql-connector-python
