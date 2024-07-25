@@ -1,0 +1,13 @@
+Flask==2.1.0
+flask-socketio
+Werkzeug==2.1.0
+imutils==0.5.4
+Flask-WTF==0.15.1
+Gunicorn
+yolo
+ultralytics
+geopy
+psycopg2
+reportlab
+opencv-python
+numpy
