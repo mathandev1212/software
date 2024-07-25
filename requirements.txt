@@ -12,3 +12,4 @@ reportlab
 opencv-python
 numpy
 mysql-connector-python
+pdfkit
