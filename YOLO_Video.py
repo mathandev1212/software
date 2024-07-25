@@ -13,7 +13,7 @@ url = urlparse("postgresql://powerguard_user:qraDCcZYglRcRYEzyOO7iaunanU6KFvh@dp
 # Extract connection parameters
 db_params = {
     'host': "dpg-cqg9ql2ju9rs73c9vr1g-a.oregon.render.com",
-    'port':5432
+    'port':5432,
     'user': url.username,
     'password': url.password,
     'database': url.path[1:],
