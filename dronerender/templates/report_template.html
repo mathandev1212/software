@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Report</title>
+</head>
+<body>
+    <h1>PERIODIC REPORT</h1>
+    
+    <h2>POWER PLANT NAME: {{ report_data.plant_name }}</h2>
+    <p>LOCATION: {{ report_data.location }}</p>
+    <p>DATE: {{ report_data.date }}</p>
+    <p>TIME: {{ report_data.time }}</p>
+
+    <p>ENGINEER NAME: {{ report_data.engineer_name }}</p>
+    <p>ENGINEER ID: {{ report_data.engineer_id }}</p>
+
+    <h3>UNIT DATA</h3>
+    <table border="1">
+        <tr>
+            <th>UNIT NAME</th>
+            <th>TEMPERATURE (IN CELSIUS)</th>
+            <th>WORKING CONDITION</th>
+            <th>DAMAGE DETECTION</th>
+            <th>GAS EMISSION</th>
+        </tr>
+        {% for unit in report_data.unit_data %}
+            <tr>
+                <td>{{ unit.unit_name }}</td>
+                <td>{{ unit.temperature }}</td>
+                <td>{{ unit.working_condition }}</td>
+                <td>{{ unit.damage_detection }}</td>
+                <td>{{ unit.gas_emission }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
