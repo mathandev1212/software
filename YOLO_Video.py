@@ -12,7 +12,7 @@ url = urlparse("postgresql://powerguard_user:qraDCcZYglRcRYEzyOO7iaunanU6KFvh@dp
 
 # Extract connection parameters
 db_params = {
-    'host': "dpg-cqg9ql2ju9rs73c9vr1g-a.oregon.render.com",
+    'host': "dpg-cqg9ql2ju9rs73c9vr1g-a",
     'port':5432,
     'user': url.username,
     'password': url.password,
@@ -33,7 +33,7 @@ DEFAULT_LONGITUDE = 77.5228917
 def get_current_location():
     try:
         # Replace with your IP address or leave it empty for automatic detection
-        location = geolocator.geocode("192.168.171.13")
+        location = geolocator.geocode("0.0.0.0")
 
         if location:
             return f"{location.latitude}, {location.longitude}"
