@@ -8,7 +8,7 @@ import psycopg2
 from urllib.parse import urlparse
 
 # Parse the PostgreSQL connection URL
-url = urlparse("postgresql://powerguard_user:qraDCcZYglRcRYEzyOO7iaunanU6KFvh@dpg-cqg9ql2ju9rs73c9vr1g-a.oregon-postgres.render.com/powerguard")
+url = urlparse("postgres://powerguard_user:qraDCcZYglRcRYEzyOO7iaunanU6KFvh@dpg-cqg9ql2ju9rs73c9vr1g-a.oregon-postgres.render.com/powerguard")
 
 # Extract connection parameters
 db_params = {
